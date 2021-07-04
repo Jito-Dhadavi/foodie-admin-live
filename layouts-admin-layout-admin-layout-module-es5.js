@@ -639,7 +639,7 @@
       /* harmony default export */
 
 
-      __webpack_exports__["default"] = "<div class=\"row\">\n  <div class=\"col-lg-3 col-md-6 col-sm-6\">\n    <div class=\"card card-stats\">\n      <div class=\"card-body \">\n        <div class=\"row\">\n          <div class=\"col-5 col-md-4\">\n            <div class=\"icon-big text-center icon-warning\">\n              <i class=\"nc-icon nc-globe text-warning\"></i>\n            </div>\n          </div>\n          <div class=\"col-7 col-md-8\">\n            <div class=\"numbers\">\n              <p class=\"card-category\">Capacity</p>\n              <p class=\"card-title\">150GB\n                <p>\n            </div>\n          </div>\n        </div>\n      </div>\n      <div class=\"card-footer \">\n        <hr>\n        <div class=\"stats\">\n          <i class=\"fa fa-refresh\"></i> Update Now\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class=\"col-lg-3 col-md-6 col-sm-6\">\n    <div class=\"card card-stats\">\n      <div class=\"card-body \">\n        <div class=\"row\">\n          <div class=\"col-5 col-md-4\">\n            <div class=\"icon-big text-center icon-warning\">\n              <i class=\"nc-icon nc-money-coins text-success\"></i>\n            </div>\n          </div>\n          <div class=\"col-7 col-md-8\">\n            <div class=\"numbers\">\n              <p class=\"card-category\">Revenue</p>\n              <p class=\"card-title\">$ 1,345\n                <p>\n            </div>\n          </div>\n        </div>\n      </div>\n      <div class=\"card-footer \">\n        <hr>\n        <div class=\"stats\">\n          <i class=\"fa fa-calendar-o\"></i> Last day\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class=\"col-lg-3 col-md-6 col-sm-6\">\n    <div class=\"card card-stats\">\n      <div class=\"card-body \">\n        <div class=\"row\">\n          <div class=\"col-5 col-md-4\">\n            <div class=\"icon-big text-center icon-warning\">\n              <i class=\"nc-icon nc-vector text-danger\"></i>\n            </div>\n          </div>\n          <div class=\"col-7 col-md-8\">\n            <div class=\"numbers\">\n              <p class=\"card-category\">Errors</p>\n              <p class=\"card-title\">23\n                <p>\n            </div>\n          </div>\n        </div>\n      </div>\n      <div class=\"card-footer \">\n        <hr>\n        <div class=\"stats\">\n          <i class=\"fa fa-clock-o\"></i> In the last hour\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class=\"col-lg-3 col-md-6 col-sm-6\">\n    <div class=\"card card-stats\">\n      <div class=\"card-body \">\n        <div class=\"row\">\n          <div class=\"col-5 col-md-4\">\n            <div class=\"icon-big text-center icon-warning\">\n              <i class=\"nc-icon nc-favourite-28 text-primary\"></i>\n            </div>\n          </div>\n          <div class=\"col-7 col-md-8\">\n            <div class=\"numbers\">\n              <p class=\"card-category\">Followers</p>\n              <p class=\"card-title\">+45K\n                <p>\n            </div>\n          </div>\n        </div>\n      </div>\n      <div class=\"card-footer \">\n        <hr>\n        <div class=\"stats\">\n          <i class=\"fa fa-refresh\"></i> Update now\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n\n";
+      __webpack_exports__["default"] = "<div class=\"row\">\n  <div class=\"col-lg-3 col-md-6 col-sm-6\">\n    <div class=\"card card-stats\">\n      <div class=\"card-body \">\n        <div class=\"row\">\n          <div class=\"col-5 col-md-4\">\n            <div class=\"icon-big text-center icon-warning\">\n              <i class=\"nc-icon nc-cart-simple text-warning\"></i>\n            </div>\n          </div>\n          <div class=\"col-7 col-md-8\">\n            <div class=\"numbers\">\n              <p class=\"card-category\">Orders</p>\n              <p class=\"card-title\">{{stats?.ordersCount}}\n                <p>\n            </div>\n          </div>\n        </div>\n      </div>\n      <div class=\"card-footer \">\n        <hr>\n        <div class=\"stats\">\n          <i class=\"fa fa-calendar-o\"></i> Last day\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class=\"col-lg-3 col-md-6 col-sm-6\">\n    <div class=\"card card-stats\">\n      <div class=\"card-body \">\n        <div class=\"row\">\n          <div class=\"col-5 col-md-4\">\n            <div class=\"icon-big text-center icon-warning\">\n              <i class=\"nc-icon nc-bullet-list-67 text-success\"></i>\n            </div>\n          </div>\n          <div class=\"col-7 col-md-8\">\n            <div class=\"numbers\">\n              <p class=\"card-category\">Categories</p>\n              <p class=\"card-title\">{{stats?.categoriesCount}}\n                <p>\n            </div>\n          </div>\n        </div>\n      </div>\n      <div class=\"card-footer \">\n        <hr>\n        <div class=\"stats\">\n          <i class=\"fa fa-calendar-o\"></i> Last day\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class=\"col-lg-3 col-md-6 col-sm-6\">\n    <div class=\"card card-stats\">\n      <div class=\"card-body \">\n        <div class=\"row\">\n          <div class=\"col-5 col-md-4\">\n            <div class=\"icon-big text-center icon-warning\">\n              <i class=\"nc-icon nc-basket text-danger\"></i>\n            </div>\n          </div>\n          <div class=\"col-7 col-md-8\">\n            <div class=\"numbers\">\n              <p class=\"card-category\">Products</p>\n              <p class=\"card-title\">{{stats?.productsCount}}\n                <p>\n            </div>\n          </div>\n        </div>\n      </div>\n      <div class=\"card-footer \">\n        <hr>\n        <div class=\"stats\">\n          <i class=\"fa fa-calendar-o\"></i> Last day\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class=\"col-lg-3 col-md-6 col-sm-6\">\n    <div class=\"card card-stats\">\n      <div class=\"card-body \">\n        <div class=\"row\">\n          <div class=\"col-5 col-md-4\">\n            <div class=\"icon-big text-center icon-warning\">\n              <i class=\"nc-icon nc-single-02 text-primary\"></i>\n            </div>\n          </div>\n          <div class=\"col-7 col-md-8\">\n            <div class=\"numbers\">\n              <p class=\"card-category\">Users</p>\n              <p class=\"card-title\">{{stats?.usersCount}}\n                <p>\n            </div>\n          </div>\n        </div>\n      </div>\n      <div class=\"card-footer \">\n        <hr>\n        <div class=\"stats\">\n          <i class=\"fa fa-calendar-o\"></i> Last day\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n\n";
       /***/
     },
 
@@ -4688,24 +4688,53 @@
       var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
       /*! @angular/core */
       "8Y7J");
+      /* harmony import */
+
+
+      var app_services_rest_api_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+      /*! app/services/rest-api.service */
+      "n6ga");
 
       var DashboardComponent = /*#__PURE__*/function () {
-        function DashboardComponent() {
+        function DashboardComponent(restApiService) {
           _classCallCheck2(this, DashboardComponent);
+
+          this.restApiService = restApiService;
         }
 
         _createClass2(DashboardComponent, [{
           key: "ngOnInit",
-          value: function ngOnInit() {}
+          value: function ngOnInit() {
+            this.getStats();
+          }
+        }, {
+          key: "getStats",
+          value: function getStats() {
+            var _this9 = this;
+
+            this.restApiService.getStats().then(function (res) {
+              if (res && res.code === 200) {
+                _this9.stats = res.data;
+              }
+            })["catch"](function (err) {
+              console.log('error is', err);
+            });
+          }
         }]);
 
         return DashboardComponent;
       }();
 
+      DashboardComponent.ctorParameters = function () {
+        return [{
+          type: app_services_rest_api_service__WEBPACK_IMPORTED_MODULE_3__["RestApiService"]
+        }];
+      };
+
       DashboardComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"])({
         selector: 'dashboard-cmp',
         template: _raw_loader_dashboard_component_html__WEBPACK_IMPORTED_MODULE_1__["default"]
-      })], DashboardComponent);
+      }), Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [app_services_rest_api_service__WEBPACK_IMPORTED_MODULE_3__["RestApiService"]])], DashboardComponent);
       /***/
     },
 
@@ -5129,11 +5158,11 @@
         }, {
           key: "getCategory",
           value: function getCategory() {
-            var _this9 = this;
+            var _this10 = this;
 
             this.restApiService.getCategory().then(function (res) {
               if (res && res.code === 200) {
-                _this9.categories = res.data;
+                _this10.categories = res.data;
               }
             })["catch"](function (err) {
               console.log('error is', err);
@@ -5142,12 +5171,12 @@
         }, {
           key: "open",
           value: function open(content) {
-            var _this10 = this;
+            var _this11 = this;
 
             this.modalService.open(content).result.then(function (result) {
-              _this10.closeResult = "Closed with: ".concat(result);
+              _this11.closeResult = "Closed with: ".concat(result);
             }, function (reason) {
-              _this10.closeResult = "Dismissed ".concat(_this10.getDismissReason(reason));
+              _this11.closeResult = "Dismissed ".concat(_this11.getDismissReason(reason));
             });
           }
         }, {
@@ -5164,7 +5193,7 @@
         }, {
           key: "onSave",
           value: function onSave(modal) {
-            var _this11 = this;
+            var _this12 = this;
 
             var obj = {
               name: this.categoryName
@@ -5173,7 +5202,7 @@
               if (res && res.code === 200) {
                 modal.close();
 
-                _this11.getCategory();
+                _this12.getCategory();
               }
             })["catch"](function (err) {
               console.log('error is', err);
@@ -5189,7 +5218,7 @@
         }, {
           key: "onDelete",
           value: function onDelete(category) {
-            var _this12 = this;
+            var _this13 = this;
 
             sweetalert2__WEBPACK_IMPORTED_MODULE_6___default.a.fire({
               title: 'Are you sure?',
@@ -5200,11 +5229,11 @@
               confirmButtonText: 'Yes, delete it!'
             }).then(function (result) {
               if (result.isConfirmed) {
-                _this12.restApiService.deleteCategory(category._id).then(function (res) {
+                _this13.restApiService.deleteCategory(category._id).then(function (res) {
                   if (res && res.code === 200) {
                     sweetalert2__WEBPACK_IMPORTED_MODULE_6___default.a.fire('Deleted!', 'Category has been deleted.', 'success');
 
-                    _this12.getCategory();
+                    _this13.getCategory();
                   }
                 })["catch"](function (err) {
                   console.log('error is', err);
@@ -5215,7 +5244,7 @@
         }, {
           key: "onEditSave",
           value: function onEditSave(modal) {
-            var _this13 = this;
+            var _this14 = this;
 
             var obj = {
               name: this.selectedCategory.name
@@ -5224,7 +5253,7 @@
               if (res && res.code === 200) {
                 modal.close();
 
-                _this13.getCategory();
+                _this14.getCategory();
               }
             })["catch"](function (err) {
               console.log('error is', err);

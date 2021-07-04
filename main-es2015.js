@@ -32,8 +32,8 @@ __webpack_require__.r(__webpack_exports__);
 const ROUTES = [
     { path: '/dashboard', title: 'Dashboard', icon: 'nc-bank', class: '' },
     { path: '/orders', title: 'Orders', icon: 'nc-cart-simple', class: '' },
-    { path: '/category', title: 'Category', icon: 'nc-diamond', class: '' },
-    { path: '/products', title: 'Products', icon: 'nc-bell-55', class: '' },
+    { path: '/category', title: 'Category', icon: 'nc-bullet-list-67', class: '' },
+    { path: '/products', title: 'Products', icon: 'nc-basket', class: '' },
     { path: '/users', title: 'Users', icon: 'nc-single-02', class: '' },
 ];
 let SidebarComponent = class SidebarComponent {
@@ -212,8 +212,8 @@ let LoginComponent = class LoginComponent {
     constructor(router, restApiService) {
         this.router = router;
         this.restApiService = restApiService;
-        this.email = 'admin@foodie.com';
-        this.password = 'admin123';
+        this.email = '';
+        this.password = '';
         this.isLoading = false;
     }
     ngOnInit() {
@@ -361,9 +361,6 @@ let NavbarComponent = class NavbarComponent {
             navbar.classList.add('navbar-transparent');
             navbar.classList.remove('bg-white');
         }
-    }
-    onProfile() {
-        this.router.navigateByUrl('/profile');
     }
     onLogout() {
         localStorage.clear();
@@ -528,6 +525,7 @@ class ApiConfiguration {
         this.products = 'products';
         this.product = 'product';
         this.orders = 'orders';
+        this.stats = 'stats';
     }
 }
 
@@ -1007,6 +1005,9 @@ let RestApiService = class RestApiService {
     getOrders() {
         return this.api.getData(this.api.orders);
     }
+    getStats() {
+        return this.api.getData(this.api.stats);
+    }
 };
 RestApiService.ctorParameters = () => [
     { type: _api_api_call_service__WEBPACK_IMPORTED_MODULE_2__["ApiCallService"] }
@@ -1104,7 +1105,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n<nav class=\"navbar navbar-expand-lg navbar-absolute fixed-top navbar-transparent\">\n  <div class=\"container-fluid\">\n    <div class=\"navbar-wrapper\">\n      <div class=\"navbar-toggle\">\n        <button type=\"button\" class=\"navbar-toggler\" (click)=\"sidebarToggle()\">\n          <span class=\"navbar-toggler-bar bar1\"></span>\n          <span class=\"navbar-toggler-bar bar2\"></span>\n          <span class=\"navbar-toggler-bar bar3\"></span>\n        </button>\n      </div>\n      <a class=\"navbar-brand\" href=\"javascript:void(0)\">{{getTitle()}}</a>\n    </div>\n    <button class=\"navbar-toggler\" type=\"button\" (click)=\"collapse()\"\n      [attr.aria-expanded]=\"!isCollapsed\" aria-controls=\"collapseExample\">\n      <span class=\"navbar-toggler-bar navbar-kebab\"></span>\n      <span class=\"navbar-toggler-bar navbar-kebab\"></span>\n      <span class=\"navbar-toggler-bar navbar-kebab\"></span>\n    </button>\n    <div class=\"collapse navbar-collapse justify-content-end\" id=\"collapseExample\" [ngbCollapse]=\"isCollapsed\">\n      <!-- <form>\n        <div class=\"input-group no-border\">\n          <input type=\"text\" value=\"\" class=\"form-control\" placeholder=\"Search...\">\n          <div class=\"input-group-append\">\n            <div class=\"input-group-text\">\n              <i class=\"nc-icon nc-zoom-split\"></i>\n            </div>\n          </div>\n        </div>\n      </form> -->\n      <ul class=\"navbar-nav\">\n        <!-- <li class=\"nav-item\">\n          <a class=\"nav-link btn-magnify\" href=\"javascript:void(0)\">\n            <i class=\"nc-icon nc-layout-11\"></i>\n            <p>\n              <span class=\"d-lg-none d-md-block\">Stats</span>\n            </p>\n          </a>\n        </li> -->\n\n        <li class=\"nav-item btn-rotate\" ngbDropdown placement=\"bottom-left\">\n          <a class=\"nav-link\" ngbDropdownToggle id=\"navbarDropdownMenuLink\" >\n            <i class=\"nc-icon nc-single-02\"></i>\n            <p>\n            </p>\n          </a>\n          <div ngbDropdownMenu aria-labelledby=\"navbarDropdownMenuLink\" class=\"dropdown-menu dropdown-menu-right\">\n            <a ngbDropdownItem href=\"javascript:void(0)\" (click)=\"onProfile()\">My profile</a>\n            <a ngbDropdownItem href=\"javascript:void(0)\" (click)=\"onLogout()\">Logout</a>\n          </div>\n        </li>\n        <!-- <li class=\"nav-item\">\n          <a class=\"nav-link btn-rotate\" href=\"javascript:void(0)\">\n            <i class=\"nc-icon nc-settings-gear-65\"></i>\n            <p>\n              <span class=\"d-lg-none d-md-block\">Account</span>\n            </p>\n          </a>\n        </li> -->\n      </ul>\n    </div>\n  </div>\n</nav>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("\n<nav class=\"navbar navbar-expand-lg navbar-absolute fixed-top navbar-transparent\">\n  <div class=\"container-fluid\">\n    <div class=\"navbar-wrapper\">\n      <div class=\"navbar-toggle\">\n        <button type=\"button\" class=\"navbar-toggler\" (click)=\"sidebarToggle()\">\n          <span class=\"navbar-toggler-bar bar1\"></span>\n          <span class=\"navbar-toggler-bar bar2\"></span>\n          <span class=\"navbar-toggler-bar bar3\"></span>\n        </button>\n      </div>\n      <a class=\"navbar-brand\" href=\"javascript:void(0)\">{{getTitle()}}</a>\n    </div>\n    <button class=\"navbar-toggler\" type=\"button\" (click)=\"collapse()\"\n      [attr.aria-expanded]=\"!isCollapsed\" aria-controls=\"collapseExample\">\n      <span class=\"navbar-toggler-bar navbar-kebab\"></span>\n      <span class=\"navbar-toggler-bar navbar-kebab\"></span>\n      <span class=\"navbar-toggler-bar navbar-kebab\"></span>\n    </button>\n    <div class=\"collapse navbar-collapse justify-content-end\" id=\"collapseExample\" [ngbCollapse]=\"isCollapsed\">\n      <!-- <form>\n        <div class=\"input-group no-border\">\n          <input type=\"text\" value=\"\" class=\"form-control\" placeholder=\"Search...\">\n          <div class=\"input-group-append\">\n            <div class=\"input-group-text\">\n              <i class=\"nc-icon nc-zoom-split\"></i>\n            </div>\n          </div>\n        </div>\n      </form> -->\n      <ul class=\"navbar-nav\">\n        <!-- <li class=\"nav-item\">\n          <a class=\"nav-link btn-magnify\" href=\"javascript:void(0)\">\n            <i class=\"nc-icon nc-layout-11\"></i>\n            <p>\n              <span class=\"d-lg-none d-md-block\">Stats</span>\n            </p>\n          </a>\n        </li> -->\n\n        <li class=\"nav-item btn-rotate\" ngbDropdown placement=\"bottom-left\">\n          <a class=\"nav-link\" ngbDropdownToggle id=\"navbarDropdownMenuLink\" >\n            <i class=\"nc-icon nc-single-02\"></i>\n            <p>\n            </p>\n          </a>\n          <div ngbDropdownMenu aria-labelledby=\"navbarDropdownMenuLink\" class=\"dropdown-menu dropdown-menu-right\">\n            <a ngbDropdownItem href=\"javascript:void(0)\" (click)=\"onLogout()\">Logout</a>\n          </div>\n        </li>\n        <!-- <li class=\"nav-item\">\n          <a class=\"nav-link btn-rotate\" href=\"javascript:void(0)\">\n            <i class=\"nc-icon nc-settings-gear-65\"></i>\n            <p>\n              <span class=\"d-lg-none d-md-block\">Account</span>\n            </p>\n          </a>\n        </li> -->\n      </ul>\n    </div>\n  </div>\n</nav>\n");
 
 /***/ }),
 

@@ -378,7 +378,7 @@ AdminLayoutModule = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"row\">\n  <div class=\"col-lg-3 col-md-6 col-sm-6\">\n    <div class=\"card card-stats\">\n      <div class=\"card-body \">\n        <div class=\"row\">\n          <div class=\"col-5 col-md-4\">\n            <div class=\"icon-big text-center icon-warning\">\n              <i class=\"nc-icon nc-globe text-warning\"></i>\n            </div>\n          </div>\n          <div class=\"col-7 col-md-8\">\n            <div class=\"numbers\">\n              <p class=\"card-category\">Capacity</p>\n              <p class=\"card-title\">150GB\n                <p>\n            </div>\n          </div>\n        </div>\n      </div>\n      <div class=\"card-footer \">\n        <hr>\n        <div class=\"stats\">\n          <i class=\"fa fa-refresh\"></i> Update Now\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class=\"col-lg-3 col-md-6 col-sm-6\">\n    <div class=\"card card-stats\">\n      <div class=\"card-body \">\n        <div class=\"row\">\n          <div class=\"col-5 col-md-4\">\n            <div class=\"icon-big text-center icon-warning\">\n              <i class=\"nc-icon nc-money-coins text-success\"></i>\n            </div>\n          </div>\n          <div class=\"col-7 col-md-8\">\n            <div class=\"numbers\">\n              <p class=\"card-category\">Revenue</p>\n              <p class=\"card-title\">$ 1,345\n                <p>\n            </div>\n          </div>\n        </div>\n      </div>\n      <div class=\"card-footer \">\n        <hr>\n        <div class=\"stats\">\n          <i class=\"fa fa-calendar-o\"></i> Last day\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class=\"col-lg-3 col-md-6 col-sm-6\">\n    <div class=\"card card-stats\">\n      <div class=\"card-body \">\n        <div class=\"row\">\n          <div class=\"col-5 col-md-4\">\n            <div class=\"icon-big text-center icon-warning\">\n              <i class=\"nc-icon nc-vector text-danger\"></i>\n            </div>\n          </div>\n          <div class=\"col-7 col-md-8\">\n            <div class=\"numbers\">\n              <p class=\"card-category\">Errors</p>\n              <p class=\"card-title\">23\n                <p>\n            </div>\n          </div>\n        </div>\n      </div>\n      <div class=\"card-footer \">\n        <hr>\n        <div class=\"stats\">\n          <i class=\"fa fa-clock-o\"></i> In the last hour\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class=\"col-lg-3 col-md-6 col-sm-6\">\n    <div class=\"card card-stats\">\n      <div class=\"card-body \">\n        <div class=\"row\">\n          <div class=\"col-5 col-md-4\">\n            <div class=\"icon-big text-center icon-warning\">\n              <i class=\"nc-icon nc-favourite-28 text-primary\"></i>\n            </div>\n          </div>\n          <div class=\"col-7 col-md-8\">\n            <div class=\"numbers\">\n              <p class=\"card-category\">Followers</p>\n              <p class=\"card-title\">+45K\n                <p>\n            </div>\n          </div>\n        </div>\n      </div>\n      <div class=\"card-footer \">\n        <hr>\n        <div class=\"stats\">\n          <i class=\"fa fa-refresh\"></i> Update now\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"row\">\n  <div class=\"col-lg-3 col-md-6 col-sm-6\">\n    <div class=\"card card-stats\">\n      <div class=\"card-body \">\n        <div class=\"row\">\n          <div class=\"col-5 col-md-4\">\n            <div class=\"icon-big text-center icon-warning\">\n              <i class=\"nc-icon nc-cart-simple text-warning\"></i>\n            </div>\n          </div>\n          <div class=\"col-7 col-md-8\">\n            <div class=\"numbers\">\n              <p class=\"card-category\">Orders</p>\n              <p class=\"card-title\">{{stats?.ordersCount}}\n                <p>\n            </div>\n          </div>\n        </div>\n      </div>\n      <div class=\"card-footer \">\n        <hr>\n        <div class=\"stats\">\n          <i class=\"fa fa-calendar-o\"></i> Last day\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class=\"col-lg-3 col-md-6 col-sm-6\">\n    <div class=\"card card-stats\">\n      <div class=\"card-body \">\n        <div class=\"row\">\n          <div class=\"col-5 col-md-4\">\n            <div class=\"icon-big text-center icon-warning\">\n              <i class=\"nc-icon nc-bullet-list-67 text-success\"></i>\n            </div>\n          </div>\n          <div class=\"col-7 col-md-8\">\n            <div class=\"numbers\">\n              <p class=\"card-category\">Categories</p>\n              <p class=\"card-title\">{{stats?.categoriesCount}}\n                <p>\n            </div>\n          </div>\n        </div>\n      </div>\n      <div class=\"card-footer \">\n        <hr>\n        <div class=\"stats\">\n          <i class=\"fa fa-calendar-o\"></i> Last day\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class=\"col-lg-3 col-md-6 col-sm-6\">\n    <div class=\"card card-stats\">\n      <div class=\"card-body \">\n        <div class=\"row\">\n          <div class=\"col-5 col-md-4\">\n            <div class=\"icon-big text-center icon-warning\">\n              <i class=\"nc-icon nc-basket text-danger\"></i>\n            </div>\n          </div>\n          <div class=\"col-7 col-md-8\">\n            <div class=\"numbers\">\n              <p class=\"card-category\">Products</p>\n              <p class=\"card-title\">{{stats?.productsCount}}\n                <p>\n            </div>\n          </div>\n        </div>\n      </div>\n      <div class=\"card-footer \">\n        <hr>\n        <div class=\"stats\">\n          <i class=\"fa fa-calendar-o\"></i> Last day\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class=\"col-lg-3 col-md-6 col-sm-6\">\n    <div class=\"card card-stats\">\n      <div class=\"card-body \">\n        <div class=\"row\">\n          <div class=\"col-5 col-md-4\">\n            <div class=\"icon-big text-center icon-warning\">\n              <i class=\"nc-icon nc-single-02 text-primary\"></i>\n            </div>\n          </div>\n          <div class=\"col-7 col-md-8\">\n            <div class=\"numbers\">\n              <p class=\"card-category\">Users</p>\n              <p class=\"card-title\">{{stats?.usersCount}}\n                <p>\n            </div>\n          </div>\n        </div>\n      </div>\n      <div class=\"card-footer \">\n        <hr>\n        <div class=\"stats\">\n          <i class=\"fa fa-calendar-o\"></i> Last day\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n\n");
 
 /***/ }),
 
@@ -4207,18 +4207,37 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "mrSG");
 /* harmony import */ var _raw_loader_dashboard_component_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! raw-loader!./dashboard.component.html */ "Ixm7");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "8Y7J");
+/* harmony import */ var app_services_rest_api_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! app/services/rest-api.service */ "n6ga");
+
 
 
 
 let DashboardComponent = class DashboardComponent {
+    constructor(restApiService) {
+        this.restApiService = restApiService;
+    }
     ngOnInit() {
+        this.getStats();
+    }
+    getStats() {
+        this.restApiService.getStats().then(res => {
+            if (res && res.code === 200) {
+                this.stats = res.data;
+            }
+        }).catch(err => {
+            console.log('error is', err);
+        });
     }
 };
+DashboardComponent.ctorParameters = () => [
+    { type: app_services_rest_api_service__WEBPACK_IMPORTED_MODULE_3__["RestApiService"] }
+];
 DashboardComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"])({
         selector: 'dashboard-cmp',
         template: _raw_loader_dashboard_component_html__WEBPACK_IMPORTED_MODULE_1__["default"]
-    })
+    }),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [app_services_rest_api_service__WEBPACK_IMPORTED_MODULE_3__["RestApiService"]])
 ], DashboardComponent);
 
 
